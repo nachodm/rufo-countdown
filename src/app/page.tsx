@@ -1,6 +1,8 @@
 "use client"
 import react from "react"
 import Image from "next/image"
+
+import ClockLoader from "react-spinners/ClockLoader"
 import Countdown from "react-countdown"
 import { Time } from "./types"
 
@@ -16,6 +18,7 @@ const renderer = (time: Time) => {
         return (
             <span>
                 {days} días {hours} horas {minutes} minutos {seconds} segundos
+                <ClockLoader size={150} aria-label="Loading Spinner" data-testid="loader" />
             </span>
         )
     }
