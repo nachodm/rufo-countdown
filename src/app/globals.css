@@ -34,13 +34,20 @@ body {
 }
 
 span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: hsl(0, 0%, 28%);
     font-size: 20px !important;
     font-weight: bold !important;
     font-family: monospace;
-    letter-spacing: 4px !important;
+    letter-spacing: 3px !important;
     cursor: pointer;
     text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 span {

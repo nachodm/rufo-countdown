@@ -2,9 +2,9 @@
 import react from "react"
 import Image from "next/image"
 
-import ClockLoader from "react-spinners/ClockLoader"
 import Countdown from "react-countdown"
 import { Time } from "./types"
+import { Watch } from "react-loader-spinner"
 
 const Completionist = () => <span>El código secreto para liberar vuestro tardío regalo de boda se encuentra en el interior de la caja. Buena suerte.</span>
 
@@ -17,8 +17,11 @@ const renderer = (time: Time) => {
         // Render a countdown
         return (
             <span>
-                {days} días {hours} horas {minutes} minutos {seconds} segundos
-                <ClockLoader size={150} aria-label="Loading Spinner" data-testid="loader" />
+                {days} días <br />
+                {hours} horas <br />
+                {minutes} minutos <br />
+                {seconds} segundos
+                <Watch visible={true} height="80" width="80" radius="48" color="#545454" ariaLabel="watch-loading" wrapperStyle={{}} wrapperClass="" />
             </span>
         )
     }
