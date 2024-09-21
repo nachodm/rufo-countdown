@@ -58,6 +58,10 @@ span {
     animation: shine 3s infinite linear;
 }
 
+#completed {
+    font-size: 10px !important;
+}
+
 @keyframes shine {
     0% {
         background-position: 0;
