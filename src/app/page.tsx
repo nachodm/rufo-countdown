@@ -8,8 +8,11 @@ import { Watch } from "react-loader-spinner"
 const Completionist = () => (
     <span id="completed">
         Para liberar vuestro tardío regalo de boda el código secreto debereis hallar. Para resolverlo, necesitaréis ver muy detenidamente el siguiente{" "}
-        <a href="/challenge">link</a>. Insistimos: MUY detenidamente. Para ayudaros, la caja contiene una herramienta esencial para resolverlo. De hecho, la
-        herramienta tiene a su vez también la mitad del código... Buena suerte.
+        <a href="/challenge" rel="noopener" target="_blank">
+            link
+        </a>
+        . Insistimos: MUY detenidamente. Para ayudaros, la caja contiene una herramienta esencial para resolverlo. De hecho, la herramienta tiene a su vez
+        también la mitad del código... Buena suerte.
     </span>
 )
 
